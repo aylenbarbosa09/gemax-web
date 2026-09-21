@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================
+GENERAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #FFFDF7;
+color: #292529;
+}
+
+/* =========================
+ENCABEZADO
+========================= */
+
+header {
+height: 90px;
+padding: 0 60px;
+
+background-color: #FE4E96;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+border-bottom: 1px solid rgba(41, 37, 41, 0.08);
+
+
+}
+
+/* LOGO */
+
+.logo {
+    font-family: 'Allura', cursive;
+    font-size: 65px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.logo img {
+    width: 110px;
+    height: auto;
+    display: block;
+}
+
+/* NAVEGACIÓN */
+
+nav {
+display: flex;
+gap: 42px;
+}
+
+nav a {
+color: #292529;
+text-decoration: none;
+
+
+font-size: 20px;
+font-weight: 500;
+
+transition: color 0.3s ease;
+
+
+}
+
+nav a:hover {
+color: whitesmoke;
+}
+
+/* ICONOS */
+
+.acciones {
+display: flex;
+gap: 20px;
+}
+
+.acciones a {
+color: #292529;
+text-decoration: none;
+
+
+font-size: 22px;
+
+transition: color 0.3s ease, transform 0.3s ease;
+
+
+}
+
+.acciones a:hover {
+ color: #E3F482;
+    transform: translateY(-2px);
+}
+
+/* =========================
+NUEVA TEMPORADA
+========================= */
+
+.hero {
+width: 100%;
+height: 720px;
+
+
+background-color: #E3F482;
+
+padding: 25px;
+
+display: flex;
+
+
+}
+
+.hero-imagen {
+
+width: 100%;
+height: 100%;
+
+
+
+background-image: linear-gradient(
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15)
+);
+
+display: flex;
+align-items: flex-end;
+justify-content: flex-start;
+
+padding: 60px;
+
+position: relative;
+
+overflow: hidden;
+
+
+}
+
+.hero-contenido {
+position: relative;
+z-index: 2;
+
+
+max-width: 650px;
+
+color: #292529;
+
+
+}
+
+.hero-etiqueta {
+font-size: 12px;
+
+
+letter-spacing: 4px;
+
+margin-bottom: 15px;
+
+
+}
+
+.hero h1 {
+font-family: 'Cormorant Garamond', serif;
+
+
+font-size: 92px;
+
+line-height: 0.9;
+
+font-weight: 600;
+
+margin-bottom: 20px;
+
+
+}
+
+.hero-contenido > p:not(.hero-etiqueta) {
+font-size: 17px;
+
+
+font-weight: 300;
+
+margin-bottom: 30px;
+
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: #FE4E96;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+background-color: #292529;
+
+
+transform: translateY(-2px);
+
+
+}
+
+.destacados {
+padding: 110px 60px;
+}
+
+.titulo-seccion {
+text-align: center;
+margin-bottom: 55px;
+}
+
+.titulo-seccion p {
+color: #FE4E96;
+
+
+font-size: 12px;
+letter-spacing: 4px;
+
+margin-bottom: 8px;
+
+
+}
+
+.titulo-seccion h2 {
+font-family: 'Cormorant Garamond', serif;
+
+
+font-size: 56px;
+font-weight: 600;
+
+
+}
+
+/* PRODUCTOS */
+
+.productos {
+display: grid;
+
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 28px;
+
+max-width: 1200px;
+
+margin: 0 auto;
+
+
+}
+
+.producto {
+background-color: #FFFFFF;
+
+
+border-radius: 18px;
+
+padding: 18px;
+
+box-shadow: 0 8px 30px rgba(41, 37, 41, 0.07);
+
+transition: transform 0.3s ease,
+            box-shadow 0.3s ease;
+
+
+}
+
+.producto:hover {
+transform: translateY(-5px);
+
+
+box-shadow: 0 14px 35px rgba(41, 37, 41, 0.10);
+
+
+}
+
+/* IMAGEN DEL PRODUCTO */
+
+.producto-imagen {
+height: 380px;
+
+
+border-radius: 12px;
+
+background-color: #F3F0E9;
+
+display: flex;
+}
+/* =========================
+   COLORES SECCIONES INFERIORES
+========================= */
+
+/* NUEVA COLECCIÓN */
+
+.nueva-coleccion {
+    padding: 100px 60px;
+    background-color:#FE4E96;
+}
+
+.nueva-coleccion .titulo-seccion h2 {
+    color: #292529;
+}
+
+.nueva-coleccion .titulo-seccion p {
+      font-size: 30px;
+    color: #E3F482;
+letter-spacing: 7px;
+font-weight: 600;
+}
+
+/* Línea decorativa lima debajo del título */
+
+.nueva-coleccion .titulo-seccion h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 7px;
+    background-color: #E3F482;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+
+/* DESTACADOS */
+
+.destacados {
+    background-color: #E3F482;
+}
+
+.destacados .titulo-seccion p {
+    color: #FE4E96;
+}
+
+
+/* TARJETAS DE PRODUCTOS */
+
+.producto {
+    border: 2px solid transparent;
+}
+
+.producto:hover {
+    border-color: #FE4E96;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter {
+    background-color: #FE4E96;
+    color: #FFFFFF;
+}
+
+.newsletter button {
+    background-color: #E3F482;
+    color: #292529;
+}
+
+.newsletter button:hover {
+    background-color: #292529;
+    color: #FFFFFF;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 8px solid #E3F482;
+}
+.destacados {
+    background-color: #E3F482;
+}
+/* HOVER NUEVA COLECCIÓN */
+
+.nueva-coleccion .producto:hover {
+    border-color: #E3F482;
+}
+/* TAMAÑO DEL MENÚ PRINCIPAL */
+
+nav a {
+    font-size: 17px;
+}
+
+
+/* TAMAÑO INICIAR SESIÓN Y REGISTRARSE */
+
+.acciones .iniciar-sesion {
+    font-size: 15px !important;
+}
+
+.acciones .registrarse {
+    font-size: 15px !important;
+    padding: 8px 14px;
+}
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.acciones .iniciar-sesion,
+.acciones .registrarse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+/* =========================
+   NUEVA TEMPORADA - FOTOS
+========================= */
+
+.hero {
+    width: 100%;
+    height: auto;
+    background-color: #E3F482;
+    padding: 25px;
+    display: block;
+}
+
+.temporada-fotos {
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    overflow: hidden;
+}
+
+.foto-temporada {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.foto-temporada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.foto-temporada:hover img {
+    transform: scale(1.04);
+}
+
+
+/* TÍTULO NUEVA TEMPORADA */
+
+.hero-titulo {
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+.hero-titulo p {
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.hero-titulo h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+.temporada-fotos {
+    height: 520px !important;
+}
+/* =========================
+   FOTOS NUEVA COLECCIÓN
+========================= */
+
+.nueva-coleccion .productos {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nueva-coleccion .producto-imagen {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #F3F0E9;
+}
+
+.nueva-coleccion .producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.nueva-coleccion .producto:hover .producto-imagen img {
+    transform: scale(1.04);
+}
+
+.nueva-coleccion .producto h3 {
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.nueva-coleccion .producto > p {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* FOTO HORIZONTAL DEL CONJUNTO */
+
+.nueva-coleccion .conjunto-imagen img {
+    object-fit: contain;
+}
+
+.nueva-coleccion .conjunto-imagen {
+    background-color: #F3F0E9;
+}
+/* =========================
+   DISTRIBUCIÓN NUEVA COLECCIÓN
+========================= */
+
+/* Tres productos arriba */
+.nueva-coleccion .productos-coleccion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Conjunto horizontal abajo */
+.nueva-coleccion .producto-horizontal {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+/* Contenedor de la foto horizontal */
+.nueva-coleccion .producto-horizontal .producto-imagen {
+    width: 100%;
+    height: auto;
+    min-height: 380px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Mostrar la foto completa, sin recortarla */
+.nueva-coleccion .producto-horizontal .producto-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+/* TAMAÑO DEL CONJUNTO HORIZONTAL */
+
+.nueva-coleccion .producto-horizontal {
+    grid-column: 1 / -1;
+    width: 65%;
+    justify-self: center;
+}
+
+.nueva-coleccion .producto-horizontal .producto-imagen {
+    min-height: 0;
+    height: auto;
+}
+
+.nueva-coleccion .producto-horizontal .producto-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+/* =========================
+   NEWSLETTER MODERNO
+========================= */
+
+.newsletter {
+    background-color: #FE4E96;
+    color: #292529;
+    padding: 70px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.newsletter-texto {
+    max-width: 520px;
+}
+
+.newsletter-marca {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #E3F482;
+    margin-bottom: 10px;
+}
+
+.newsletter h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.newsletter-descripcion {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* CAMPO DE EMAIL */
+
+.newsletter-form {
+    display: flex;
+    width: 460px;
+    max-width: 100%;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 15px 20px;
+
+    border: none;
+    outline: none;
+
+    background-color: #FFFDF7;
+    color: #292529;
+
+    border-radius: 30px 0 0 30px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.newsletter-form button {
+    border: none;
+    padding: 15px 24px;
+
+    background-color: #E3F482;
+    color: #292529;
+
+    border-radius: 0 30px 30px 0;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #292529;
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   FOOTER GEMAX
+========================= */
+
+.footer-gemax {
+    background-color: #FFFDF7;
+    color: #292529;
+
+    padding: 45px 60px 20px;
+
+    text-align: center;
+
+    border-top: 7px solid #E3F482;
+}
+
+
+/* LOGO */
+
+.footer-marca {
+    font-family: 'Allura', cursive;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+
+/* REDES SOCIALES */
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+
+    margin-bottom: 35px;
+}
+
+.footer-redes a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #292529;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.footer-redes i {
+    font-size: 22px;
+    color: #FE4E96;
+}
+
+.footer-redes a:hover {
+    color: #FE4E96;
+    transform: translateY(-2px);
+}
+
+
+/* COPYRIGHT */
+
+.footer-copy {
+    border-top: 1px solid #E7E3DD;
+    padding-top: 18px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #999999;
+}

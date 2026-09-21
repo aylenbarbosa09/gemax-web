@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GEMAX</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css') }}">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+<div class="logo">
+    Gemax_indumentaria
+</div>
+        <nav>
+            <a href="#">Hombre</a>
+            <a href="#">Mujer</a>
+            <a href="#">Zapas</a>
+        </nav>
+
+        <div class="acciones">
+
+    <a href="#" class="iniciar-sesion">
+        Iniciar sesión
+    </a>
+
+    <a href="#" class="registrarse">
+        Registrarse
+    </a>
+
+    <a href="#" class="carrito" title="Carrito">
+        <i class="bi bi-cart3"></i>
+    </a>
+
+</div>
+
+    </header>
+
+
+    <!-- NUEVA TEMPORADA -->
+
+    <main>
+
+       <section class="hero">
+
+    <div class="temporada-fotos">
+
+        <div class="foto-temporada">
+            <img src="{{ url_for('static', filename='img/diego.png') }}">
+        </div>
+
+        <div class="foto-temporada">
+            <img src="{{ url_for('static', filename='img/dino.png') }}">
+        </div>
+
+        <div class="foto-temporada">
+            <img src="{{ url_for('static', filename='img/dino1.png') }}">
+        </div>
+
+        <div class="foto-temporada">
+            <img src="{{ url_for('static', filename='img/dino3.png') }}">
+        </div>
+
+        <div class="foto-temporada">
+            <img src="{{ url_for('static', filename='img/nena.png') }}">
+        </div>
+
+    </div>
+
+    <div class="hero-titulo">
+        <p>GEMAX</p>
+        <h1>Nueva temporada</h1>
+        <a href="#" class="boton">Ver colección</a>
+    </div>
+
+</section>S
+
+<!-- NUEVA COLECCIÓN -->
+
+<section class="nueva-coleccion">
+
+    <div class="titulo-seccion">
+        <p>GEMAX</p>
+        <h2>Nueva colección</h2>
+    </div>
+
+   <div class="productos productos-coleccion">
+
+    <!-- ADIDAS -->
+    <article class="producto">
+        <div class="producto-imagen">
+            <img src="{{ url_for('static', filename='img/adidass.png') }}" alt="Zapatillas Adidas">
+        </div>
+        <h3>Zapatillas Adidas VL Court</h3>
+        <p>$50.000</p>
+    </article>
+
+
+    <!-- CAMPERA -->
+    <article class="producto">
+        <div class="producto-imagen">
+            <img src="{{ url_for('static', filename='img/campera.png') }}" alt="Campera puffer">
+        </div>
+        <h3>Campera puffer</h3>
+        <p>$80.000</p>
+    </article>
+
+
+    <!-- NIKE -->
+    <article class="producto">
+        <div class="producto-imagen">
+            <img src="{{ url_for('static', filename='img/nike.png') }}" alt="Zapatillas Nike">
+        </div>
+        <h3>Zapatillas Nike Airforce</h3>
+        <p>$90.000</p>
+    </article>
+
+
+    <!-- CONJUNTO HORIZONTAL -->
+    <article class="producto producto-horizontal">
+        <div class="producto-imagen">
+            <img src="{{ url_for('static', filename='img/conjunto.png') }}" alt="Conjunto">
+        </div>
+        <h3>Conjunto</h3>
+        <p>$110.000</p>
+    </article>
+
+</div>
+
+</section>
+        <!-- PRODUCTOS DESTACADOS -->
+
+        <section class="destacados">
+
+            <div class="titulo-seccion">
+
+                <p>
+                    GEMAX
+                </p>
+
+                <h2>
+                    Destacados
+                </h2>
+
+            </div>
+
+
+            <div class="productos">
+
+                <article class="producto">
+
+                    <div class="producto-imagen">
+                        Imagen
+                    </div>
+
+                    <h3>
+                        Producto 01
+                    </h3>
+
+                    <p>
+                        $00.000
+                    </p>
+
+                </article>
+
+
+                <article class="producto">
+
+                    <div class="producto-imagen">
+                        Imagen
+                    </div>
+
+                    <h3>
+                        Producto 02
+                    </h3>
+
+                    <p>
+                        $00.000
+                    </p>
+
+                </article>
+
+
+                <article class="producto">
+
+                    <div class="producto-imagen">
+                        Imagen
+                    </div>
+
+                    <h3>
+                        Producto 03
+                    </h3>
+
+                    <p>
+                        $00.000
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+
+<section class="newsletter">
+
+    <div class="newsletter-texto">
+        <p class="newsletter-marca">GEMAX</p>
+
+        <h2>Quedate cerca</h2>
+
+        <p class="newsletter-descripcion">
+            Suscribite para recibir novedades, lanzamientos y promociones.
+        </p>
+    </div>
+
+    <form class="newsletter-form">
+
+        <input
+            type="email"
+            placeholder="Tu email"
+            required>
+
+        <button type="submit">
+            Suscribirme
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+
+<!-- PIE DE PÁGINA -->
+
+<footer class="footer-gemax">
+
+    <div class="footer-marca">
+        Gemax_indumentaria
+    </div>
+
+    <div class="footer-redes">
+
+    <a href="https://www.instagram.com/gemax.ind/" target="_blank">
+        <i class="bi bi-instagram"></i>
+        <span>Instagram</span>
+    </a>
+
+</div>
+
+    <p class="footer-copy">
+        © 2026 GEMAX
+    </p>
+
+</footer>
+
+</body>
+</html>
