@@ -758,3 +758,347 @@ nav a {
     transform: scale(1.04);
     transition: transform 0.4s ease;
 }
+/* ========================================
+   RESPONSIVE - TABLETS
+======================================== */
+
+@media (max-width: 900px) {
+
+    header {
+        height: auto;
+        padding: 18px 25px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 48px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .acciones {
+        gap: 12px;
+    }
+
+    .acciones .iniciar-sesion,
+    .acciones .registrarse {
+        font-size: 13px !important;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVE - CELULARES
+======================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 15px;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        font-size: 43px;
+    }
+
+    nav {
+        order: 2;
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .acciones {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .acciones .iniciar-sesion,
+    .acciones .registrarse {
+        font-size: 12px !important;
+    }
+
+    .carrito {
+        font-size: 20px !important;
+    }
+}
+/* ========================================
+   NUEVA TEMPORADA RESPONSIVE
+======================================== */
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    .temporada-fotos {
+        height: 450px !important;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .foto-temporada:nth-child(4),
+    .foto-temporada:nth-child(5) {
+        display: none;
+    }
+
+    .hero-titulo h1 {
+        font-size: 52px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 10px;
+    }
+
+    .temporada-fotos {
+        height: 280px !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .foto-temporada:nth-child(3),
+    .foto-temporada:nth-child(4),
+    .foto-temporada:nth-child(5) {
+        display: none;
+    }
+
+    .hero-titulo {
+        padding: 30px 10px 20px;
+    }
+
+    .hero-titulo h1 {
+        font-size: 43px;
+    }
+
+    .hero-titulo p {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+}
+/* ========================================
+   NUEVA COLECCIÓN RESPONSIVE
+======================================== */
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    .nueva-coleccion {
+        padding: 70px 30px;
+    }
+
+    .nueva-coleccion .productos-coleccion {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .nueva-coleccion .producto-horizontal {
+        width: 80%;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    .nueva-coleccion {
+        padding: 55px 15px;
+    }
+
+    .nueva-coleccion .titulo-seccion {
+        margin-bottom: 35px;
+    }
+
+    .nueva-coleccion .titulo-seccion p {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .nueva-coleccion .titulo-seccion h2 {
+        font-size: 42px;
+    }
+
+    .nueva-coleccion .productos-coleccion {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.nueva-coleccion .producto {
+    padding: 10px;
+}
+
+.nueva-coleccion .producto-imagen {
+    height: 190px;
+}
+
+.nueva-coleccion .producto h3 {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.nueva-coleccion .producto > p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+    .nueva-coleccion .producto-horizontal {
+        width: 100%;
+    }
+
+    .nueva-coleccion .producto-horizontal .producto-imagen {
+        height: auto;
+    }
+}
+/* ========================================
+   DESTACADOS RESPONSIVE
+======================================== */
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    .destacados {
+        padding: 70px 30px;
+    }
+
+    .destacados .productos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .destacados .titulo-seccion h2 {
+        font-size: 50px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    .destacados {
+        padding: 55px 15px;
+    }
+
+    .destacados .titulo-seccion {
+        margin-bottom: 35px;
+    }
+
+    .destacados .titulo-seccion h2 {
+        font-size: 42px;
+    }
+
+    .destacados .productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.destacados .producto {
+    padding: 10px;
+}
+
+.destacados .producto-imagen {
+    height: 190px;
+}
+
+.destacados .producto h3 {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.destacados .producto > p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+}
+/* ========================================
+   NEWSLETTER Y FOOTER RESPONSIVE
+======================================== */
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    .newsletter {
+        padding: 60px 30px;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .newsletter-texto {
+        max-width: 600px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .footer-gemax {
+        padding: 40px 30px 20px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    .newsletter {
+        padding: 50px 20px;
+        gap: 25px;
+    }
+
+    .newsletter h2 {
+        font-size: 42px;
+    }
+
+    .newsletter-descripcion {
+        font-size: 13px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .footer-gemax {
+        padding: 35px 15px 20px;
+    }
+
+    .footer-marca {
+        font-size: 42px;
+    }
+
+    .footer-redes {
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+}
