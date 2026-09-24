@@ -1169,3 +1169,18 @@ nav a {
     object-fit: cover;
     min-width: 0;
 }
+@media (max-width: 600px) {
+
+    .productos-categoria {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .foto-producto-categoria {
+        height: 380px;
+    }
+
+    .categoria-hombre .foto-producto-categoria {
+        height: 500px;
+    }
+}
