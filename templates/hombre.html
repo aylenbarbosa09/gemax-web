@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hombre | GEMAX</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css') }}">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Gemax_indumentaria</div>
+
+        <nav>
+    <a href="{{ url_for('inicio') }}">Inicio</a>
+    <a href="{{ url_for('hombre') }}">Hombre</a>
+    <a href="{{ url_for('mujer') }}">Mujer</a>
+    <a href="{{ url_for('zapas') }}">Zapas</a>
+</nav>
+
+        <div class="acciones">
+            <a href="#" class="iniciar-sesion">Iniciar sesión</a>
+            <a href="#" class="registrarse">Registrarse</a>
+            <a href="#" class="carrito" title="Carrito">
+                <i class="bi bi-cart3"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="pagina-categoria categoria-hombre">
+
+    
+
+        <div class="titulo-seccion">
+            <p>GEMAX</p>
+            <h2>Hombre</h2>
+        </div>
+
+        <div class="productos-categoria">
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/diego3.jpeg') }}" alt="Remera Lisa Negra">
+        </div>
+        <h3>Remera Lisa Negra</h3>
+        <p>$25.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/diego5.jpeg') }}" alt="Campera de jean">
+        </div>
+        <h3>Campera de jean</h3>
+        <p>$45.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/diego6.jpeg') }}" alt="Babucha cargo color arena">
+        </div>
+        <h3>Babucha cargo color arena</h3>
+        <p>$27.000</p>
+    </article>
+
+</div>

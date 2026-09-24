@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mujer | GEMAX</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css') }}">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Gemax_indumentaria</div>
+
+        <nav>
+    <a href="{{ url_for('inicio') }}">Inicio</a>
+    <a href="{{ url_for('hombre') }}">Hombre</a>
+    <a href="{{ url_for('mujer') }}">Mujer</a>
+    <a href="{{ url_for('zapas') }}">Zapas</a>
+</nav>
+
+        <div class="acciones">
+            <a href="#" class="iniciar-sesion">Iniciar sesión</a>
+            <a href="#" class="registrarse">Registrarse</a>
+            <a href="#" class="carrito" title="Carrito">
+                <i class="bi bi-cart3"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="pagina-categoria">
+
+        <div class="titulo-seccion">
+            <p>GEMAX</p>
+            <h2>Mujer</h2>
+        </div>
+
+       <div class="productos-categoria">
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/argmulticolor_baggie.jpeg') }}">
+        </div>
+        <h3>Buzo Arg beige</h3>
+        <p>$30.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzo_argentina.jpeg') }}">
+        </div>
+        <h3>Buzo Argentina celeste y blanco</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzo_argentinacrema.jpeg') }}">
+        </div>
+        <h3>Buzo Argentina World Champion</h3>
+        <p>$30.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzoarg_baggie.jpeg') }}">
+        </div>
+        <h3>Jean baggy</h3>
+        <p>$32.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzoarg_baggie2.jpeg') }}">
+        </div>
+        <h3>Buzo Arg sol</h3>
+        <p>$30.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzocrema_jean.jpeg') }}">
+        </div>
+        <h3>Buzo Hamptons crema</h3>
+        <p>$30.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzoeternite_chupin.jpeg') }}">
+        </div>
+        <h3>Buzo Eternité verdecon cierre</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzohamptons_baggie.jpeg') }}">
+        </div>
+        <h3>Buzo Hamptons negro</h3>
+        <p>$30.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzonyc_baggie.jpeg') }}">
+        </div>
+        <h3>Buzo NYC negro con cierre</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzonyc_mom.jpeg') }}">
+        </div>
+        <h3>Buzo NYC bordo con cierre</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzorayado_jean.jpeg') }}">
+        </div>
+        <h3>Buzo vintage vibes con cierre</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/buzorosa_jean.jpeg') }}">
+        </div>
+        <h3>Jean chupin</h3>
+        <p>$20.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/camperaadidas_print.jpeg') }}">
+        </div>
+        <h3>Campera Adidas print</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/conjunto_adidas.jpeg') }}">
+        </div>
+        <h3>Joggin palazo</h3>
+        <p>$14.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/conjunto_multicolor.jpeg') }}">
+        </div>
+        <h3>Canguro Adidas</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/conjunto_plush.jpeg') }}">
+        </div>
+        <h3>Conjunto Plush</h3>
+        <p>$36.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/conjuntopuma.jpeg') }}">
+        </div>
+        <h3>Conjunto Puma</h3>
+        <p>$40.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/remera_print.jpeg') }}">
+        </div>
+        <h3>Remera Adidas</h3>
+        <p>$20.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/remeras_reptil.jpeg') }}">
+        </div>
+        <h3>Remera Adidas Snake manga negra</h3>
+        <p>$20.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/Mujer/remeras_reptil2.jpeg') }}">
+        </div>
+        <h3>Remera Adidas Snake manga blanca</h3>
+        <p>$20.000</p>
+    </article>
+
+</div>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zapas | GEMAX</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css') }}">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Gemax_indumentaria</div>
+
+       <nav>
+    <a href="{{ url_for('inicio') }}">Inicio</a>
+    <a href="{{ url_for('hombre') }}">Hombre</a>
+    <a href="{{ url_for('mujer') }}">Mujer</a>
+    <a href="{{ url_for('zapas') }}">Zapas</a>
+</nav>
+
+        <div class="acciones">
+            <a href="#" class="iniciar-sesion">Iniciar sesión</a>
+            <a href="#" class="registrarse">Registrarse</a>
+            <a href="#" class="carrito" title="Carrito">
+                <i class="bi bi-cart3"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="pagina-categoria">
+
+        <div class="titulo-seccion">
+            <p>GEMAX</p>
+            <h2>Zapas</h2>
+        </div>
+
+       <div class="productos-categoria">
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/adidasadizero_blancas.jpeg') }}">
+        </div>
+        <h3>Adidas Adizero</h3>
+        <p>$65.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/adidasresponse_azul.jpeg') }}">
+        </div>
+        <h3>Adidas Astrastar</h3>
+        <p>$00.000</p>
+    </article>
+
+    <article class="producto-categoria">
+    <div class="foto-producto-categoria">
+        <img src="{{ url_for('static', filename='img/zapas/nb530_crema2.jpeg') }}">
+    </div>
+    <h3>New Balance 530 crema</h3>
+    <p>$35.000</p>
+</article>
+
+<article class="producto-categoria">
+    <div class="foto-producto-categoria">
+        <img src="{{ url_for('static', filename='img/zapas/nb530_negras2.jpeg') }}">
+    </div>
+    <h3>New Balance 530 negras</h3>
+    <p>$35.000</p>
+</article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/nb530chocolate.jpeg') }}">
+        </div>
+        <h3>New Balance chocolate</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/nikeinitiator_negras.jpeg') }}">
+        </div>
+        <h3>Nike Initiator</h3>
+        <p>$40.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/nikeinitiator_negras2.jpeg') }}">
+        </div>
+        <h3>Nike Initiator</h3>
+        <p>$40.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/vans_botita.jpeg') }}">
+        </div>
+        <h3>Vans botita</h3>
+        <p>$35.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/zapas6.jpeg') }}">
+        </div>
+        <h3>Nike Air Force</h3>
+        <p>$65.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/zapas8.jpeg') }}">
+        </div>
+        <h3>All Star rojas</h3>
+        <p>$30.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/zapas9.jpeg') }}">
+        </div>
+        <h3>All Star azules</h3>
+        <p>$30.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/zapas10.jpeg') }}">
+        </div>
+        <h3>All Star negras</h3>
+        <p>$30.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/zapas11.jpeg') }}">
+        </div>
+        <h3>Straye</h3>
+        <p>$65.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/zapas12.jpeg') }}">
+        </div>
+        <h3>Vans Hylane azules</h3>
+        <p>$65.000</p>
+    </article>
+
+    <article class="producto-categoria">
+        <div class="foto-producto-categoria">
+            <img src="{{ url_for('static', filename='img/zapas/zapas13.jpeg') }}">
+        </div>
+        <h3>Vans Hylane chocolate</h3>
+        <p>$65.000</p>
+    </article>
+
+</div>
