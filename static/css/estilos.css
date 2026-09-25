@@ -1144,15 +1144,12 @@ nav a {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-  .foto-producto-categoria img {
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease !important;
 }
 
 .producto-categoria:hover .foto-producto-categoria img {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
-
 .producto-categoria h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
