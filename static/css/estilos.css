@@ -1145,6 +1145,13 @@ nav a {
     object-fit: cover;
     display: block;
 }
+  .foto-producto-categoria img {
+    transition: transform 0.4s ease;
+}
+
+.producto-categoria:hover .foto-producto-categoria img {
+    transform: scale(1.05);
+}
 
 .producto-categoria h3 {
     font-family: 'Poppins', sans-serif;
@@ -1175,6 +1182,9 @@ nav a {
 }
 .categoria-hombre .foto-producto-categoria {
     height: 500px;
+}
+  .categoria-hombre .foto-producto-categoria img {
+    object-position: center top;
 }
 .dos-fotos {
     display: grid;
