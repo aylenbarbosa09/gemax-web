@@ -1108,7 +1108,7 @@ nav a {
 /* PÁGINAS DE CATEGORÍAS */
 
 .pagina-categoria {
-    background-color: #F5E8B7;
+    background-color: #F5E8B7;!important;
     min-height: 700px;
     padding: 70px 60px;
 }
